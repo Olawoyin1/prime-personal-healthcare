@@ -10,8 +10,30 @@ import {
   MdCheckCircle,
   MdArrowForward
 } from 'react-icons/md';
+import { Video, CheckCircle, Smartphone, Calendar, Download } from 'lucide-react';
+
 
 const VirtualCare = () => {
+  const steps = [
+    {
+      step: 1,
+      icon: <Calendar className="w-8 h-8" />,
+      title: "Book Your Appointment",
+      description: "Schedule your virtual consultation online or by phone"
+    },
+    {
+      step: 2,
+      icon: <Video className="w-8 h-8" />,
+      title: "Join the Video Call",
+      description: "Access your secure video consultation from any device"
+    },
+    {
+      step: 3,
+      icon: <CheckCircle className="w-8 h-8" />,
+      title: "Receive Care",
+      description: "Get diagnosis, treatment plans, and prescriptions digitally"
+    }
+  ];
   const features = [
     {
       icon: MdVideoCall,
@@ -99,6 +121,43 @@ const VirtualCare = () => {
         </div>
       </section>
 
+
+      {/* How It Works */}
+      <section className="py-17">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              How Virtual Consultations Work
+            </h2>
+            <p className="text-gray-600 max-w-3xl mx-auto">
+              Getting healthcare through virtual consultations is simple, secure, and convenient. 
+              Here's how it works:
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
+            {steps.map((step, index) => (
+              <div
+                key={index}
+                className="text-center animate-fade-in"
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
+                <div className="relative mb-6">
+                  <div className="w-20 h-20 bg-gradient-to-br from-[#0EA5E9] via-[#0EA5E9]/90 to-[#10B981] text-white rounded-full flex items-center justify-center mx-auto">
+                    {step.icon}
+                  </div>
+                  <div className="absolute -top-2 -left-2 w-8 h-8 bg-[#10B981] text-white rounded-full flex items-center justify-center text-sm font-bold">
+                    {step.step}
+                  </div>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
+                <p className="text-gray-600">{step.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto">
@@ -158,8 +217,8 @@ const VirtualCare = () => {
             </div>
             <div className="relative">
               <div className="bg-gradient-to-br from-[#0EA5E9] to-[#10B981] rounded-2xl p-8 text-white">
-                <h3 className="font-heading font-bold text-2xl mb-4">Ready to Get Started?</h3>
-                <p className="font-body text-white/90 mb-6">
+                <h3 className="font-heading font-bold text-xl mb-2">Ready to Get Started?</h3>
+                <p className="font-body text-white/90 mb-3">
                   Join thousands of patients who have discovered the convenience and quality of virtual healthcare.
                 </p>
                 <div className="space-y-4">
@@ -182,7 +241,36 @@ const VirtualCare = () => {
                     <span className="font-body">Receive personalized care plan</span>
                   </div>
                 </div>
+
+
+                <div className="mt-7">
+              <h3 className="text-xl font-bold mb-3">Technical Requirements</h3>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <Smartphone size={20} className="text-healthcare-primary mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold">Device</h4>
+                    <p className="">Computer, tablet, or smartphone with camera and microphone</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Video size={20} className="text-healthcare-primary mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold">Internet</h4>
+                    <p className="">Stable internet connection for video calling</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Download size={20} className="text-healthcare-primary mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold">Browser</h4>
+                    <p className="">Updated web browser (Chrome, Safari, Firefox)</p>
+                  </div>
+                </div>
               </div>
+            </div>
+              </div>
+              
             </div>
           </div>
         </div>
