@@ -30,7 +30,7 @@ const ContactInfo = () => {
   ];
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-4">
       <div>
         <h3 className="font-heading font-bold text-2xl text-slate mb-4">
           Get in Touch
@@ -41,7 +41,7 @@ const ContactInfo = () => {
         </p>
       </div>
 
-      <div className="space-y-6">
+      <div className="space-y-2">
         {contactDetails.map((item, index) => {
           const IconComponent = item.icon;
           const content = (
@@ -91,7 +91,7 @@ const ContactInfo = () => {
           href="https://wa.me/1234567890?text=Hello%2C%20I%27m%20interested%20in%20learning%20more%20about%20your%20healthcare%20services."
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center px-4 py-2 bg-[#10B981] text-white rounded-lg font-body font-medium hover:bg-[#10B981]/90 transition-colors"
+          className="inline-flex text-sm items-center px-4 py-2 bg-[#10B981] text-white rounded-lg font-body font-medium hover:bg-[#10B981]/90 transition-colors"
         >
           <span>Start WhatsApp Chat</span>
         </a>

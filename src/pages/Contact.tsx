@@ -42,7 +42,7 @@ const Contact = () => {
             <h2 className="font-heading font-bold text-3xl text-slate mb-4">
               Visit Our Office
             </h2>
-            <p className="font-body text-lg text-gray-600">
+            <p className="font-body text-gray-600">
               Located in the heart of the medical district for your convenience.
             </p>
           </div>
