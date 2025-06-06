@@ -54,16 +54,16 @@ const About = () => {
         <div className="container mx-auto ">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h1 className="font-heading font-bold text-4xl sm:text-5xl text-slate">
-                Our Story of{' '}
+              <h1 className="font-heading font-extrabold text-3xl sm:text-4xl text-slate">
+                Our Story of{' '} <br />
                 <span className="text-[#0EA5E9]">Compassionate Care</span>
               </h1>
-              <p className="font-body text-lg text-gray-600 leading-relaxed">
+              <p className="font-body text-gray-600 leading-relaxed">
                 Founded on the belief that everyone deserves dignified, personalized healthcare, 
                 Gentle Care Path began as a vision to transform how healthcare is delivered in 
                 the comfort of your own home.
               </p>
-              <p className="font-body text-lg text-gray-600 leading-relaxed">
+              <p className="font-body text-gray-600 leading-relaxed">
                 We understand that health challenges can feel overwhelming, which is why our 
                 approach focuses not just on medical needs, but on preserving independence, 
                 maintaining dignity, and enhancing quality of life.
@@ -94,7 +94,7 @@ const About = () => {
       {/* Mission Section */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-heading font-bold text-3xl text-slate mb-8">
+          <h2 className="font-heading font-bold text-3xl text-slate mb-4">
             Our Mission
           </h2>
           <blockquote className="font-body text-xl text-gray-600 leading-relaxed italic border-l-4 border-[#0EA5E9] pl-6">
@@ -112,7 +112,7 @@ const About = () => {
             <h2 className="font-heading font-bold text-3xl text-slate mb-4">
               Our Core Values
             </h2>
-            <p className="font-body text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="font-body text-gray-600 max-w-2xl mx-auto">
               These principles guide every interaction and decision we make in caring for you and your loved ones.
             </p>
           </div>
@@ -145,7 +145,7 @@ const About = () => {
             <h2 className="font-heading font-bold text-3xl text-slate mb-4">
               Meet Our Leadership Team
             </h2>
-            <p className="font-body text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="font-body text-gray-600 max-w-2xl mx-auto">
               Experienced healthcare professionals dedicated to providing exceptional care and leadership.
             </p>
           </div>
@@ -210,7 +210,7 @@ const About = () => {
                 in your life or the life of your loved one.
               </p>
               <button 
-                className="w-full bg-[#2563EB] hover:bg-[#2563EB]/90 text-white font-body py-3 px-7 rounded font-medium"
+                className="w-full text-sm bg-[#2563EB] hover:bg-[#2563EB]/90 text-white font-body py-3 px-7 rounded font-medium"
               >
                 <Link to="/contact">Schedule Your Free Consultation</Link>
               </button>

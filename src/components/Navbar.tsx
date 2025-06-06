@@ -56,7 +56,7 @@ const Navbar = () => {
               <span className="font-body text-sm">(123) 456-7890</span>
             </a>
             <button 
-              className="bg-[#2563EB] hover:bg-[#2563EB]/90 text-white font-body py-2 rounded font-medium px-6"
+              className="bg-[#2563EB] hover:bg-[#2563EB]/90 text-white text-sm font-body py-2 rounded font-medium px-6"
             >
               <Link to="/contact">Book Consultation</Link>
             </button>

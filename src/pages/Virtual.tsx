@@ -62,22 +62,22 @@ const VirtualCare = () => {
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
-              <h1 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-6">
+              <h1 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-6xl leading-tight mb-6">
                 Healthcare at Your
-                <span className="block text-[#10B981]">Fingertips</span>
+                <span className="block text-[#1]">Fingertips</span>
               </h1>
-              <p className="font-body text-xl text-white/90 leading-relaxed mb-8">
+              <p className="font-body text-white/90 leading-relaxed mb-8">
                 Experience the future of healthcare with our comprehensive virtual care platform. 
                 Connect with licensed healthcare professionals from anywhere, anytime.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
-                  className="bg-white text-[#0EA5E9] hover:bg-gray-100 font-body font-semibold px-8 py-4"
+                  className="bg-white text-[#0EA5E9] hover:bg-gray-100 text-sm font-body font-semibold px-8 py-4"
                 >
                   <Link to="/contact">Start Virtual Consultation</Link>
                 </button>
                 <button 
-                  className="border-white text-white hover:bg-white hover:text-[#0EA5E9] font-body font-semibold px-8 py-4"
+                  className="border-white text-white hover:bg-white hover:text-[#0EA5E9] text-sm font-body font-semibold px-8 py-4"
                 >
                   Watch Demo Video
                 </button>
@@ -106,7 +106,7 @@ const VirtualCare = () => {
             <h2 className="font-heading font-bold text-3xl sm:text-4xl text-slate mb-4">
               Advanced Virtual Care Features
             </h2>
-            <p className="font-body text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="font-body text-gray-600 max-w-3xl mx-auto">
               Our state-of-the-art virtual care platform combines cutting-edge technology 
               with compassionate healthcare to deliver exceptional patient experiences.
             </p>
@@ -141,7 +141,7 @@ const VirtualCare = () => {
               <h2 className="font-heading font-bold text-3xl sm:text-4xl text-slate mb-6">
                 Why Choose Virtual Care?
               </h2>
-              <p className="font-body text-lg text-gray-600 mb-8">
+              <p className="font-body text-gray-600 mb-8">
                 Virtual care isn't just convenient—it's transforming how patients access quality healthcare. 
                 Experience the benefits that thousands of families already enjoy.
               </p>
@@ -190,16 +190,16 @@ const VirtualCare = () => {
 
       {/* CTA Section */}
       <section className="py-16 bg-slate-900">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center px-4 ">
           <h2 className="font-heading font-bold text-3xl sm:text-4xl text-white mb-4">
             Experience Virtual Care Today
           </h2>
-          <p className="font-body text-lg text-gray-300 mb-8">
+          <p className="font-body text-gray-300 mb-8">
             Take the first step towards convenient, accessible healthcare. 
             Our virtual care specialists are ready to help you achieve your health goals.
           </p>
           <button 
-            className="bg-[#0EA5E9] hover:bg-[#0EA5E9]/90 text-white font-body font-semibold px-8 py-4"
+            className="bg-[#0EA5E9] hover:bg-[#0EA5E9]/90 text-white text-sm font-body font-semibold px-8 py-4"
           >
             <Link to="/contact" className="flex items-center">
               Book Virtual Appointment

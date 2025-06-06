@@ -72,10 +72,10 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ service, isOpen, onClose })
             )}
 
             <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-200">
-              <button className="flex-1 bg-[#0EA5E9] hover:bg-[#0EA5E9]/90 text-white font-body font-medium py-3 px-6 rounded-lg transition-colors">
+              <button className="flex-1 bg-[#0EA5E9] hover:bg-[#0EA5E9]/90 text-white text-sm font-body font-medium py-3 px-6 rounded transition-colors">
                 Request This Service
               </button>
-              <button className="flex-1 border border-[#0EA5E9] text-[#0EA5E9] hover:bg-[#0EA5E9] hover:text-white font-body font-medium py-3 px-6 rounded-lg transition-colors">
+              <button className="flex-1 border border-[#0EA5E9] text-[#0EA5E9] text-sm hover:bg-[#0EA5E9] hover:text-white font-body font-medium py-3 px-6 rounded transition-colors">
                 Schedule Consultation
               </button>
             </div>

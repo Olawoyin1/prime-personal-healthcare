@@ -8,10 +8,10 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-green-50 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-heading font-bold text-4xl sm:text-5xl text-slate mb-6">
+          <h1 className="font-heading font-extrabold text-3xl sm:text-4xl text-slate mb-4">
             Let's Start Your Care Journey
           </h1>
-          <p className="font-body text-lg text-gray-600 leading-relaxed">
+          <p className="font-body text-gray-600 leading-relaxed">
             Ready to experience compassionate, professional healthcare in the comfort of your home? 
             We're here to answer your questions and help you take the first step toward better care.
           </p>

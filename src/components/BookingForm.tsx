@@ -47,7 +47,7 @@ const BookingForm = () => {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-lg p-8">
+    <div className="bg-white rounded-xl shadow p-8">
       <div className="mb-6">
         <h3 className="font-heading font-bold text-2xl text-slate mb-2">
           Book Your Free Consultation
@@ -70,7 +70,7 @@ const BookingForm = () => {
               value={formData.name}
               onChange={(e) => handleinputChange("name", e.target.value)}
               required
-              className="font-body"
+              className="font-body border-0 border-b border-blue-800 text-sm focus-0"
               placeholder="Enter your full name"
             />
           </div>

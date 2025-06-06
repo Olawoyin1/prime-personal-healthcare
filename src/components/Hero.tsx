@@ -13,29 +13,29 @@ const Hero = () => {
       <div className="container mx-auto py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div className="animate-fade-in">
-              <div className="inline-flex items-center px-4 py-2  bg-gradient-to-br from-blue-300 to-green-100 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
+          <div className="animate-fade-in flex flex-col items-start gap-5">
+              <div className="inline-flex items-center px-4 py-2  bg-gradient-to-br from-blue-300 to-green-100 rounded-full text-sm font-medium backdrop-blur-sm">
                 <FaStar className="w-4 h-4 mr-2 text-blue-900" />
                 Trusted Healthcare Provider
               </div>
               
-              <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-                Your Health,
+              <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+                Your Health,  Our Mission
                 <br />
                 <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-                  Our Mission
+                  Where Professionalism Meets Compassion
                 </span>
               </h1>
               
-              <p className="mb-8 text-blue-0 leading-relaxed">
+              <p className="text-blue-0 leading-relaxed">
                 Experience world-class healthcare with our comprehensive medical services. 
                 From routine check-ups to specialized treatments, we're here for you every step of the way.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/book-appointment"
-                  className="group bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white  py-4 px-8 rounded-xl transition-all duration-300 transform  shadow flex items-center justify-center space-x-2 text-sm md:text-lg"
+                  className="group bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white  py-4 px-8 rounded-xl transition-all duration-300 transform  shadow flex items-center justify-center space-x-2 text-sm"
                 >
                   <FaRegCalendar size={20} />
                   <span>Book Appointment</span>
@@ -43,7 +43,7 @@ const Hero = () => {
                 </Link>
                 <Link
                   to="/virtual-consultation"
-                  className="group bg-white bg-opacity-20 backdrop-blur-sm text-blue-600  hover:bg-opacity-30  py-4 px-8 rounded-xl transition-all duration-300 transform  shadow flex items-center justify-center space-x-2 border border-white border-opacity-30 text-sm md:text-lg"
+                  className="group bg-white bg-opacity-20 backdrop-blur-sm text-blue-600  hover:bg-opacity-30  py-4 px-8 rounded-xl transition-all duration-300 transform  shadow flex items-center justify-center space-x-2 border border-white border-opacity-30 text-sm "
                 >
                   <FaVideo size={20} />
                   <span>Virtual Care</span>
@@ -51,12 +51,8 @@ const Hero = () => {
                 </Link>
               </div>
               
-              <div className="flex items-center space-x-6">
+              <div className="flex flex-wrap items-center space-x-6">
                
-                <div className="flex items-center space-x-2">
-                  <IoMdCheckmarkCircleOutline size={16} className="text-green-400" />
-                  <span className="text-sm">24/7 emergency care</span>
-                </div>
                 <div className="flex items-center space-x-2">
                   <IoMdCheckmarkCircleOutline size={16} className="text-green-400" />
                   <span className="text-sm">Insurance Accepted</span>
@@ -64,6 +60,10 @@ const Hero = () => {
                 <div className="flex items-center space-x-2">
                   <IoMdCheckmarkCircleOutline size={16} className="text-green-400" />
                   <span className="text-sm">Licensed Professionals</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <IoMdCheckmarkCircleOutline size={16} className="text-green-400" />
+                  <span className="text-sm">24/7 emergency care</span>
                 </div>
               </div>
             </div>
@@ -74,7 +74,7 @@ const Hero = () => {
           <div className="relative">
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src="https://images.unsplash.com/photo-1584467735871-8e85353a8413?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGhlYWx0aGNhcmV8ZW58MHx8MHx8fDA%3D"
                 alt="Caregiver providing compassionate care to elderly patient"
                 className="w-full h-[500px] object-cover"
               />

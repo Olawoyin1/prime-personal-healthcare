@@ -59,7 +59,7 @@ const Home = () => {
             <h2 className="font-heading font-bold text-3xl sm:text-4xl text-slate mb-4">
               Our Core Services
             </h2>
-            <p className="font-body text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="font-body  text-gray-600 max-w-2xl mx-auto">
               Comprehensive healthcare solutions designed to meet your unique needs and preferences.
             </p>
           </div>
@@ -75,7 +75,7 @@ const Home = () => {
           </div>
 
           <div className="text-center">
-            <button className="bg-[#0EA5E9] hover:bg-[#0EA5E9]/90 text-white px-8 py-3 font-body font-medium">
+            <button className="bg-[#0EA5E9] hover:bg-[#0EA5E9]/90 text-white text-sm px-8 py-3 font-body font-medium">
               <Link to="/services" className="flex items-center">
                 View All Services
                 <MdArrowForward className="ml-2 h-5 w-5" />
@@ -92,7 +92,7 @@ const Home = () => {
             <h2 className="font-heading font-bold text-3xl sm:text-4xl text-slate mb-4">
               How We Deliver Care
             </h2>
-            <p className="font-body text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="font-body text-gray-600 max-w-2xl mx-auto">
               Choose the care delivery method that works best for your lifestyle and needs.
             </p>
           </div>
@@ -123,18 +123,18 @@ const Home = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-[#0EA5E9]/5 to-[#10B981]/5"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-heading font-bold text-4xl sm:text-5xl text-slate mb-6">
+            <h2 className="font-heading font-bold text-3xl sm:text-4xl text-slate mb-4">
               Why Families Choose Us
             </h2>
-            <p className="font-body text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              We're more than a healthcare provider—we're your trusted partners in maintaining 
+            <p className="font-body  text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              We're more than a healthcare provider. We're your trusted partners in maintaining 
               independence, dignity, and exceptional quality of life.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid lg:grid-cols-3 gap-4 md:gap-8 mb-16">
             {/* Left Column */}
-            <div className="space-y-8">
+            <div className="space-y-4 md:space-y-8">
               <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#0EA5E9] to-[#0EA5E9]/80 rounded-xl flex items-center justify-center mb-6">
                   <MdFavorite className="h-8 w-8 text-white" />
@@ -185,7 +185,7 @@ const Home = () => {
             </div>
 
             {/* Right Column */}
-            <div className="space-y-8">
+            <div className="space-y-4 md:space-y-8">
               <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#0EA5E9] to-[#0EA5E9]/80 rounded-xl flex items-center justify-center mb-6">
                   <MdAccessTime className="h-8 w-8 text-white" />
@@ -211,7 +211,7 @@ const Home = () => {
           </div>
 
           {/* Bottom Stats */}
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-12 h-12 bg-[#0EA5E9]/10 rounded-lg flex items-center justify-center mx-auto mb-3">
                 <MdVerified className="h-6 w-6 text-[#0EA5E9]" />
@@ -254,7 +254,7 @@ const Home = () => {
             <h2 className="font-heading font-bold text-3xl sm:text-4xl text-slate mb-4">
               What Our Families Say
             </h2>
-            <p className="font-body text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="font-body text-gray-600 max-w-2xl mx-auto">
               Real stories from real families who have experienced our compassionate care.
             </p>
           </div>
@@ -269,7 +269,7 @@ const Home = () => {
         <div className="absolute top-10 left-10 w-32 h-32 bg-white opacity-5 rounded-full"></div>
         <div className="absolute bottom-10 right-10 w-24 h-24 bg-white opacity-5 rounded-full"></div>
         
-        <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+        <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-4 flex flex-col gap-6">
           <h2 className="text-3xl md:text-4xl font-bold">
             Ready to Take Control of Your Health?
           </h2>
@@ -277,10 +277,10 @@ const Home = () => {
             Join thousands of satisfied patients who trust HealthCare+ for their medical needs. 
             Experience the future of healthcare with our comprehensive services and expert care.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/book-appointment"
-              className="group bg-white text-[#0EA5E9] hover:bg-gray-50 font-bold py-4 px-8 rounded-xl transition-all duration-300 transform  flex items-center justify-center space-x-3"
+              className="group bg-white text-[#0EA5E9] hover:bg-gray-50 font-bold py-4 px-8 rounded transition-all duration-300 transform  flex items-center justify-center space-x-3 text-sm"
             >
               <FaRegCalendar size={20} />
               <span>Book Your Appointment</span>
@@ -288,7 +288,7 @@ const Home = () => {
             </Link>
             <Link
               to="/contact"
-              className="group bg-transparent border  border-gray-200 text-white hover:bg-white hover:text-[#0EA5E9] font-bold py-4 px-8 rounded-xl transition-all duration-300 transform  flex items-center justify-center space-x-3"
+              className="group bg-transparent border  border-gray-200 text-white hover:bg-white hover:text-[#0EA5E9] font-bold py-4 px-8 rounded transition-all duration-300 transform text-sm  flex items-center justify-center space-x-3"
             >
               <MdPhone size={20} />
               <span>Contact Us Today</span>
