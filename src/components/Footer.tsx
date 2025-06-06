@@ -19,7 +19,7 @@ const Footer = () => {
               Providing compassionate, professional healthcare services in the comfort 
               of your home. Your dignity, independence, and well-being are our priority.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <a
                 href="tel:+1234567890"
                 className="text-[#0EA5E9] hover:text-[#0EA5E9]/80 transition-colors"
@@ -34,8 +34,31 @@ const Footer = () => {
               >
                 <MdEmail className="h-5 w-5" />
               </a>
-            </div>
+            </div> */}
           </div>
+
+
+           {/* Services */}
+          <div>
+            <h3 className="font-heading font-semibold text-lg mb-4">Our Services</h3>
+            <ul className="space-y-2">
+              {[
+                'In-Home Care',
+                'Professional Nursing',
+                'Personal Support',
+                'Companionship',
+                '24/7 Live-In Care',
+                'Post-Hospital Care',
+              ].map((service) => (
+                <li key={service}>
+                  <span className="font-body text-gray-300 text-sm">
+                    {service}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
 
           {/* Quick Links */}
           <div>
@@ -59,27 +82,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
-          <div>
-            <h3 className="font-heading font-semibold text-lg mb-4">Our Services</h3>
-            <ul className="space-y-2">
-              {[
-                'In-Home Care',
-                'Professional Nursing',
-                'Personal Support',
-                'Companionship',
-                '24/7 Live-In Care',
-                'Post-Hospital Care',
-              ].map((service) => (
-                <li key={service}>
-                  <span className="font-body text-gray-300 text-sm">
-                    {service}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
+         
           {/* Contact Info */}
           <div>
             <h3 className="font-heading font-semibold text-lg mb-4">Contact Info</h3>
