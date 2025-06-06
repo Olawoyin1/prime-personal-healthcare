@@ -18,6 +18,7 @@ const Services = lazy(() => import("./pages/Services"));
 const Contact = lazy(() => import("./pages/Contact"));
 const ErrorPage = lazy(() => import("./utils/ErrorPage"));
 const SharedLayout = lazy(() => import("./layouts/SharedLayout"));
+const VirtualCare = lazy(() => import("./pages/Virtual"));
 
 const main = createBrowserRouter(
   createRoutesFromElements(
@@ -74,6 +75,15 @@ const main = createBrowserRouter(
         element={
           <Suspense fallback={<Loader />}>
             <Contact />
+          </Suspense>
+        }
+      />
+        
+      <Route
+        path="virtual-care"
+        element={
+          <Suspense fallback={<Loader />}>
+            <VirtualCare />
           </Suspense>
         }
       />

@@ -21,8 +21,8 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ service, isOpen, onClose })
         <div className="inline-block w-full max-w-4xl p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
           <div className="flex items-start justify-between mb-6">
             <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center">
-                <IconComponent className="h-8 w-8 text-primary" />
+              <div className="w-16 h-16 bg-[#0EA5E9]/10 rounded-xl flex items-center justify-center">
+                <IconComponent className="h-8 w-8 text-[#0EA5E9]" />
               </div>
               <div>
                 <h3 className="font-heading font-bold text-2xl text-slate">
@@ -61,7 +61,7 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ service, isOpen, onClose })
                 <div className="grid md:grid-cols-2 gap-3">
                   {service.features.map((feature, index) => (
                     <div key={index} className="flex items-start space-x-3">
-                      <MdCheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                      <MdCheckCircle className="h-5 w-5 text-[#10B981] mt-0.5 flex-shrink-0" />
                       <span className="font-body text-gray-600 text-sm">
                         {feature}
                       </span>
@@ -72,10 +72,10 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ service, isOpen, onClose })
             )}
 
             <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-200">
-              <button className="flex-1 bg-primary hover:bg-primary/90 text-white font-body font-medium py-3 px-6 rounded-lg transition-colors">
+              <button className="flex-1 bg-[#0EA5E9] hover:bg-[#0EA5E9]/90 text-white font-body font-medium py-3 px-6 rounded-lg transition-colors">
                 Request This Service
               </button>
-              <button className="flex-1 border border-primary text-primary hover:bg-primary hover:text-white font-body font-medium py-3 px-6 rounded-lg transition-colors">
+              <button className="flex-1 border border-[#0EA5E9] text-[#0EA5E9] hover:bg-[#0EA5E9] hover:text-white font-body font-medium py-3 px-6 rounded-lg transition-colors">
                 Schedule Consultation
               </button>
             </div>

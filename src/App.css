@@ -17,7 +17,14 @@ button{
     text-decoration: none;
 }
 
+label{
+    display: block;
+}
 
+input, textarea{
+    display: block;
+    width: 100%;
+}
 
 
 .container{
@@ -37,10 +44,10 @@ button{
 
 
 .loader {
-  color: #fff;
+  color: #0EA5E9;
   font-size: 10px;
-  width: 1em;
-  height: 1em;
+  width: 0.7em;
+  height: 0.7em;
   border-radius: 50%;
   position: relative;
   text-indent: -9999em;
