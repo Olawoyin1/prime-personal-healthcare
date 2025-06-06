@@ -11,7 +11,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, featured = false, on
   const IconComponent = service.icon;
 
   return (
-    <div className={`group relative bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-lg transition-all duration-300 ${
+    <div className={`group relative bg-white rounded-xl shadow border border-gray-100 p-6 hover:shadow-sm transition-all duration-300 ${
       featured ? 'ring-1 ring-blue-300 scale-105' : 'hover:-translate-y-1'
     }`}>
      
