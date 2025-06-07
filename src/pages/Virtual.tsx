@@ -81,12 +81,12 @@ const VirtualCare = () => {
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-[#0EA5E9] via-[#0EA5E9]/90 to-[#10B981] overflow-hidden">
         <div className="absolute inset-0 bg-black/10"></div>
-        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
               <h1 className="font-heading font-extrabold text-3xl sm:text-4xl  leading-tight mb-6">
                 Healthcare at Your
-                <span className="block text-[#1]">Fingertips</span>
+                <span className="p-2 bg-gradient-to-br  from-[#0EA5E9] via-[#0EA5E9]/90 to-[#10B981] px-4 ml-0 md:ml-2 rounded-3xl inline-block ">Fingertips</span>
               </h1>
               <p className="font-body text-white/90 leading-relaxed mb-8">
                 Experience the future of healthcare with our comprehensive virtual care platform. 
@@ -94,7 +94,7 @@ const VirtualCare = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
-                  className="bg-white text-[#0EA5E9] hover:bg-gray-100 text-sm font-body font-semibold px-8 py-4"
+                  className="bg-white text-[#0EA5E9] rounded hover:bg-gray-100 text-sm font-body font-semibold px-8 py-4"
                 >
                   <Link to="/contact">Start Virtual Consultation</Link>
                 </button>
@@ -106,7 +106,7 @@ const VirtualCare = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-2 md:p-8 border border-white/20">
                 <img 
                   src="https://plus.unsplash.com/premium_photo-1661397076730-d50eef910cdc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dmlydHVhbCUyMGNhcmV8ZW58MHx8MHx8fDA%3D" 
                   alt="Virtual healthcare consultation"

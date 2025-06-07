@@ -11,6 +11,7 @@ import {
   
 
 } from 'react-icons/md';
+import { BsHouse } from "react-icons/bs";
 import { PiUserCircleCheckLight as MdSchool } from "react-icons/pi";
 import { PiVideoCameraLight as Video} from "react-icons/pi";
 import { DeliveryType, Service, Testimonial } from './type';
@@ -191,7 +192,7 @@ export const deliveryTypes: DeliveryType[] = [
     id: 'in-person',
     title: 'In-Person Care',
     description: 'Direct, hands-on care delivered in the comfort and safety of your own home environment.',
-    icon: MdHouse
+    icon: BsHouse
   },
   {
     id: 'virtual',

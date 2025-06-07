@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <header className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
       <div className="container mx-auto">
-        <div className="flex justify-between items-center h-22 px-4 md:px-0">
+        <div className="flex justify-between items-center h-22">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <span className="font-heading font-bold text-sm md:text-xl text-slate">
@@ -76,13 +76,13 @@ const Navbar = () => {
             isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
           }`}
         >
-          <nav className="flex flex-col space-y-4 py-4 px-4">
+          <nav className="flex flex-col space-y-4 py-4">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
                 onClick={() => setIsMenuOpen(false)}
-                className={`font-body font-medium px-2 py-1 transition-colors ${
+                className={`font-body font-medium  py-1 transition-colors ${
                   isActive(item.href)
                     ? 'text-[#0EA5E9]'
                     : 'text-slate hover:text-[#0EA5E9]'
@@ -99,7 +99,7 @@ const Navbar = () => {
                 <MdPhone className="h-4 w-4" />
                 <span className="font-body">(123) 456-7890</span>
               </a>
-              <button className="w-full mt-2 bg-[#2563EB] hover:bg-[#2563EB]/90 text-white font-body font-medium px-4 py-2 rounded-md">
+              <button className="w-full text-sm mt-2 bg-[#2563EB] hover:bg-[#2563EB]/90 text-white font-body font-medium px-4 py-2 rounded">
                 <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
                   Book Consultation
                 </Link>

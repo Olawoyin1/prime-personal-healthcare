@@ -8,7 +8,6 @@ import TestimonialCarousel from '../components/TestimonialCarousel';
 import { FaRegCalendar } from "react-icons/fa";
 import { GoArrowRight } from "react-icons/go";
 import { MdOutlineSupportAgent } from "react-icons/md";
-import { PiUserCircleCheckLight } from "react-icons/pi";
 import { AiOutlineSchedule } from "react-icons/ai";
 import { BsAward } from "react-icons/bs";
 
