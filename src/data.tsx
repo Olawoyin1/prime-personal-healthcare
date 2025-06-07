@@ -211,21 +211,21 @@ export const deliveryTypes: DeliveryType[] = [
 export const testimonials: Testimonial[] = [
   {
     id: 'testimonial-1',
-    name: 'Sarah Mitchell',
+    name: 'Sarah Olawole',
     relation: 'Daughter of care recipient',
     content: 'The compassionate care my mother received helped her maintain her independence while giving our family peace of mind. The caregivers became like family to us.',
     rating: 5
   },
   {
     id: 'testimonial-2',
-    name: 'Robert Chen',
+    name: 'Hammed Kareem',
     relation: 'Post-surgery patient',
     content: 'After my hip replacement, the nursing care I received at home was exceptional. The team was professional, caring, and helped me recover faster than I expected.',
     rating: 5
   },
   {
     id: 'testimonial-3',
-    name: 'Maria Rodriguez',
+    name: 'Mariam Shittu',
     relation: 'Wife of care recipient',
     content: 'The virtual care sessions were incredibly convenient and the hybrid approach meant my husband got the best of both worlds - technology and human touch.',
     rating: 5
