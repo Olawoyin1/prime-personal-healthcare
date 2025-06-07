@@ -84,7 +84,7 @@ const VirtualCare = () => {
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
-              <h1 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-6xl leading-tight mb-6">
+              <h1 className="font-heading font-extrabold text-3xl sm:text-4xl  leading-tight mb-6">
                 Healthcare at Your
                 <span className="block text-[#1]">Fingertips</span>
               </h1>
@@ -250,21 +250,21 @@ const VirtualCare = () => {
                   <Smartphone size={20} className="text-healthcare-primary mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold">Device</h4>
-                    <p className="">Computer, tablet, or smartphone with camera and microphone</p>
+                    <p className="text-sm">Computer, tablet, or smartphone with camera and microphone</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Video size={20} className="text-healthcare-primary mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold">Internet</h4>
-                    <p className="">Stable internet connection for video calling</p>
+                    <p className="text-sm">Stable internet connection for video calling</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Download size={20} className="text-healthcare-primary mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold">Browser</h4>
-                    <p className="">Updated web browser (Chrome, Safari, Firefox)</p>
+                    <p className="text-sm">Updated web browser (Chrome, Safari, Firefox)</p>
                   </div>
                 </div>
               </div>

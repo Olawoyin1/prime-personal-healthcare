@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { MdArrowForward, MdSecurity, MdPeople, MdLocalHospital, MdPhone,  MdFavorite, MdShield, MdGroup, MdAccessTime, MdVerified, MdHeadset } from 'react-icons/md';
+import { MdArrowForward, MdSecurity, MdPeople, MdLocalHospital, MdPhone,  MdFavorite, MdGroup, MdVerified, MdHeadset } from 'react-icons/md';
 import Hero from '../components/Hero';
 import ServiceCard from '../components/ServiceCard';
 import BenefitsSection from '../components/BenefitsSection';
@@ -7,6 +7,10 @@ import { deliveryTypes, primaryServices } from '../data';
 import TestimonialCarousel from '../components/TestimonialCarousel';
 import { FaRegCalendar } from "react-icons/fa";
 import { GoArrowRight } from "react-icons/go";
+import { MdOutlineSupportAgent } from "react-icons/md";
+import { PiUserCircleCheckLight } from "react-icons/pi";
+import { AiOutlineSchedule } from "react-icons/ai";
+import { BsAward } from "react-icons/bs";
 
 
 
@@ -43,7 +47,7 @@ const Home = () => {
             </div>
             <div className="space-y-3">
               <div className="w-16 h-16 bg-gradient-to-br from-blue-50 to-green-50 rounded-full flex items-center justify-center mx-auto">
-                <MdPhone className="h-8 w-8 text-blue-900" />
+                <MdOutlineSupportAgent className="h-8 w-8 text-blue-900" />
               </div>
               <h3 className="font-heading font-semibold text-lg text-slate">24/7 Support</h3>
               <p className="font-body text-sm text-gray-600">Round-the-clock support for emergencies and peace of mind</p>
@@ -148,7 +152,7 @@ const Home = () => {
               
               <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#10B981] to-[#10B981]/80 rounded-xl flex items-center justify-center mb-6">
-                  <MdShield className="h-8 w-8 text-white" />
+                  <BsAward className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="font-heading font-bold text-xl text-slate mb-4">Licensed & Certified</h3>
                 <p className="font-body text-gray-600 leading-relaxed">
@@ -188,7 +192,7 @@ const Home = () => {
             <div className="space-y-4 md:space-y-8">
               <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#0EA5E9] to-[#0EA5E9]/80 rounded-xl flex items-center justify-center mb-6">
-                  <MdAccessTime className="h-8 w-8 text-white" />
+                  <AiOutlineSchedule className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="font-heading font-bold text-xl text-slate mb-4">Flexible Scheduling</h3>
                 <p className="font-body text-gray-600 leading-relaxed">
@@ -199,7 +203,7 @@ const Home = () => {
               
               <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#10B981] to-[#10B981]/80 rounded-xl flex items-center justify-center mb-6">
-                  <MdHeadset className="h-8 w-8 text-white" />
+                  <MdOutlineSupportAgent className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="font-heading font-bold text-xl text-slate mb-4">24/7 Emergency Support</h3>
                 <p className="font-body text-gray-600 leading-relaxed">

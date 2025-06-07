@@ -2,10 +2,12 @@
 import { Link } from 'react-router-dom';
 import { MdPhone } from 'react-icons/md';
 import { FaStar } from "react-icons/fa6";
-import { FaRegCalendar } from "react-icons/fa";
+// import { FaRegCalendar } from "react-icons/fa";
 import { GoArrowRight } from "react-icons/go";
-import { FaVideo } from "react-icons/fa6";
+// import { FaVideo } from "react-icons/fa6";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { PiVideoCameraLight } from "react-icons/pi";
+import { BsCalendarCheck } from "react-icons/bs";
 
 const Hero = () => {
   return (
@@ -37,7 +39,7 @@ const Hero = () => {
                   to="/book-appointment"
                   className="group bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white  py-4 px-8 rounded-xl transition-all duration-300 transform  shadow flex items-center justify-center space-x-2 text-sm"
                 >
-                  <FaRegCalendar size={20} />
+                  <BsCalendarCheck size={20} />
                   <span>Book Appointment</span>
                   <GoArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
@@ -45,7 +47,7 @@ const Hero = () => {
                   to="/virtual-consultation"
                   className="group bg-white bg-opacity-20 backdrop-blur-sm text-blue-600  hover:bg-opacity-30  py-4 px-8 rounded-xl transition-all duration-300 transform  shadow flex items-center justify-center space-x-2 border border-white border-opacity-30 text-sm "
                 >
-                  <FaVideo size={20} />
+                  <PiVideoCameraLight size={20} />
                   <span>Virtual Care</span>
                   <GoArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </Link>

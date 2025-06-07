@@ -21,14 +21,14 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ service, isOpen, onClose })
         <div className="inline-block w-full max-w-4xl p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
           <div className="flex items-start justify-between mb-6">
             <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 bg-[#0EA5E9]/10 rounded-xl flex items-center justify-center">
+              <div className="min-w-16 h-16 bg-[#0EA5E9]/10 rounded-xl flex items-center justify-center">
                 <IconComponent className="h-8 w-8 text-[#0EA5E9]" />
               </div>
               <div>
-                <h3 className="font-heading font-bold text-2xl text-slate">
+                <h3 className="font-heading font-bold text-xl text-slate">
                   {service.title}
                 </h3>
-                <p className="font-body text-gray-600 mt-1">
+                <p className="font-body text-sm text-gray-600 mt-1">
                   {service.description}
                 </p>
               </div>

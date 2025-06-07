@@ -8,9 +8,11 @@ import {
   MdElderly,
   MdLocalHospital,
   MdHealing,
-  MdVideocam,
-  MdSchool
+  
+
 } from 'react-icons/md';
+import { PiUserCircleCheckLight as MdSchool } from "react-icons/pi";
+import { PiVideoCameraLight as Video} from "react-icons/pi";
 import { DeliveryType, Service, Testimonial } from './type';
 
 export const primaryServices: Service[] = [
@@ -195,7 +197,7 @@ export const deliveryTypes: DeliveryType[] = [
     id: 'virtual',
     title: 'Virtual Care',
     description: 'Remote consultations, health monitoring, and support through secure video calls and digital platforms.',
-    icon: MdVideocam
+    icon: Video
   },
   {
     id: 'hybrid',
