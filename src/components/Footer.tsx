@@ -1,6 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import { MdPhone, MdEmail, MdLocationOn } from 'react-icons/md';
+import { BiPlusMedical } from "react-icons/bi";
 
 const Footer = () => {
   return (
@@ -11,6 +12,7 @@ const Footer = () => {
           <div className="space-y-4 col-span-2">
             <Link to="/" className="flex items-center space-x-2">
               {/* <FiHeart className="h-8 w-8 text-[#0EA5E9]" /> */}
+              <BiPlusMedical color='#0EA5E9' size={20} />
               <span className="font-heading font-bold text-xl">
                 Prime Personal Healthcare
               </span>

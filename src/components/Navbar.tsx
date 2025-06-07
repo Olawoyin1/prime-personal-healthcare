@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { MdMenu, MdClose, MdPhone } from 'react-icons/md';
+import { BiPlusMedical } from "react-icons/bi";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,9 +11,9 @@ const Navbar = () => {
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'Services', href: '/services' },
-    { name: 'Virtual Care', href: '/virtual-care' },
     { name: 'About Us', href: '/about' },
+    { name: 'Virtual Care', href: '/virtual-care' },
+    { name: 'Services', href: '/services' },
   ];
 
   return (
@@ -20,9 +21,10 @@ const Navbar = () => {
       <div className="container mx-auto">
         <div className="flex justify-between items-center h-22">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <span className="font-heading font-bold text-sm md:text-xl text-slate">
-              Prime Personal Healthcare
+          <Link to="/" className="flex items-center space-x-1">
+          <BiPlusMedical color='#0EA5E9' size={20} />
+            <span className="font-heading font-bold text-[17px] md:text-xl text-slate">
+               Prime Personal Healthcare
             </span>
           </Link>
 

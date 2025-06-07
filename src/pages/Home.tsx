@@ -277,7 +277,7 @@ const Home = () => {
             Ready to Take Control of Your Health?
           </h2>
           <p className="text-blue-100 leading-relaxed">
-            Join thousands of satisfied patients who trust HealthCare+ for their medical needs. 
+            Join thousands of satisfied patients who trust Prime Personal Healthcare for their medical needs. 
             Experience the future of healthcare with our comprehensive services and expert care.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
