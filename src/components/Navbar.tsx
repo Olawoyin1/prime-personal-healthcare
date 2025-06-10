@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { MdMenu, MdClose, MdPhone } from 'react-icons/md';
-import { BiPlusMedical } from "react-icons/bi";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,9 +21,9 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-22">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-1">
-          <BiPlusMedical color='#0EA5E9' size={20} />
+          <img src="../../Images/logo.png" alt="" className='w-10' />
             <span className="font-heading font-bold text-[17px] md:text-xl text-slate">
-               Prime Personal Healthcare
+               Price Personal Healthcare
             </span>
           </Link>
 
@@ -52,7 +51,7 @@ const Navbar = () => {
               className="flex items-center space-x-2 text-slate hover:text-[#0EA5E9] transition-colors"
             >
               <MdPhone className="h-4 w-4" />
-              <span className="font-body text-sm">(123) 456-7890</span>
+              <span className="font-body text-sm">4042735566</span>
             </a>
             <button className="bg-[#2563EB] hover:bg-[#2563EB]/90 text-white text-sm font-body py-2 rounded font-medium px-6">
               <Link to="/contact">Book Consultation</Link>
@@ -99,7 +98,7 @@ const Navbar = () => {
                 className="flex items-center space-x-2 text-slate hover:text-[#0EA5E9] transition-colors px-2 py-1"
               >
                 <MdPhone className="h-4 w-4" />
-                <span className="font-body">(123) 456-7890</span>
+                <span className="font-body">4042735566</span>
               </a>
               <button className="w-full text-sm mt-2 bg-[#2563EB] hover:bg-[#2563EB]/90 text-white font-body font-medium px-4 py-2 rounded">
                 <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
