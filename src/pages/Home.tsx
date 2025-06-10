@@ -10,6 +10,7 @@ import { GoArrowRight } from "react-icons/go";
 import { MdOutlineSupportAgent } from "react-icons/md";
 import { AiOutlineSchedule } from "react-icons/ai";
 import { BsAward } from "react-icons/bs";
+import MedicalComponent from '../components/MedicalComponent';
 
 
 
@@ -120,6 +121,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
+
+      <MedicalComponent />
 
       {/* Why Choose Us Section - Modern Redesign */}
       <section className="py-20 bg-gray-50 relative overflow-hidden">
@@ -283,7 +288,7 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="group bg-white text-[#0EA5E9] hover:bg-gray-50 font-bold py-4 px-8 rounded transition-all duration-300 transform  flex items-center justify-center space-x-3 text-sm"
+              className="group bg-white text-[#0EA5E9] hover:bg-gray-50 font-bold py-3 px-8 rounded transition-all duration-300 transform  flex items-center justify-center space-x-3 text-sm"
             >
               <FaRegCalendar size={20} />
               <span>Book Your Appointment</span>
@@ -291,7 +296,7 @@ const Home = () => {
             </Link>
             <Link
               to="/contact"
-              className="group bg-transparent border  border-gray-200 text-white hover:bg-white hover:text-[#0EA5E9] font-bold py-4 px-8 rounded transition-all duration-300 transform text-sm  flex items-center justify-center space-x-3"
+              className="group bg-transparent border  border-gray-200 text-white hover:bg-white hover:text-[#0EA5E9] font-bold py-3 px-8 rounded transition-all duration-300 transform text-sm  flex items-center justify-center space-x-3"
             >
               <MdPhone size={20} />
               <span>Contact Us Today</span>

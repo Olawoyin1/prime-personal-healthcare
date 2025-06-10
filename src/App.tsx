@@ -19,6 +19,7 @@ const Contact = lazy(() => import("./pages/Contact"));
 const ErrorPage = lazy(() => import("./utils/ErrorPage"));
 const SharedLayout = lazy(() => import("./layouts/SharedLayout"));
 const VirtualCare = lazy(() => import("./pages/Virtual"));
+const MedicalEquipment = lazy(() => import("./pages/MedicalEquipment"));
 
 const main = createBrowserRouter(
   createRoutesFromElements(
@@ -47,6 +48,16 @@ const main = createBrowserRouter(
         element={
           <Suspense fallback={<Loader />}>
             <About />
+          </Suspense>
+        }
+      />
+
+
+      <Route
+        path="/medical-equipment"
+        element={
+          <Suspense fallback={<Loader />}>
+            <MedicalEquipment />
           </Suspense>
         }
       />

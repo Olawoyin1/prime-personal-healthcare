@@ -6,11 +6,11 @@ const Footer = () => {
   return (
     <footer className="bg-slate-900 text-white">
       <div className="container mx-auto py-12">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           {/* Company Info */}
           <div className="space-y-4 col-span-2">
-            <Link to="/" className="flex items-center space-x-2">
-          <img src="../../Images/logo.png" alt="" className='w-10' />
+            <Link to="/" className="flex items-center space-x-1">
+              <img src="../../Images/logo.png" alt="" className='w-10' />
               <span className="font-heading font-bold text-[17px] md:text-xl ">
                 Price Personal Healthcare
               </span>

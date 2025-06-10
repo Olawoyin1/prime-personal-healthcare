@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 import { Service } from '../type';
 import { MdClose, MdCheckCircle } from 'react-icons/md';
 
@@ -72,12 +73,12 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ service, isOpen, onClose })
             )}
 
             <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-200">
-              <button className="flex-1 bg-[#0EA5E9] hover:bg-[#0EA5E9]/90 text-white text-sm font-body font-medium py-3 px-6 rounded transition-colors">
+              <Link to="/contact" className="flex-1 items-center justify-center text-center bg-[#0EA5E9] hover:bg-[#0EA5E9]/90 text-white text-sm font-body font-medium py-3 px-6 rounded transition-colors">
                 Request This Service
-              </button>
-              <button className="flex-1 border border-[#0EA5E9] text-[#0EA5E9] text-sm hover:bg-[#0EA5E9] hover:text-white font-body font-medium py-3 px-6 rounded transition-colors">
+              </Link>
+              <Link to="/contact" className="flex-1 items-center justify-center text-center border border-[#0EA5E9] text-[#0EA5E9] text-sm hover:bg-[#0EA5E9] hover:text-white font-body font-medium py-3 px-6 rounded transition-colors">
                 Schedule Consultation
-              </button>
+              </Link>
             </div>
           </div>
         </div>
