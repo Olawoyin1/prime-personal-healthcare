@@ -44,7 +44,7 @@ const Hero = () => {
                   <GoArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link
-                  to="/virtual-consultation"
+                  to="/virtual-care"
                   className="group bg-white bg-opacity-20 backdrop-blur-sm text-blue-600  hover:bg-opacity-30  py-4 px-8 rounded-xl transition-all duration-300 transform  shadow flex items-center justify-center space-x-2 border border-white border-opacity-30 text-sm "
                 >
                   <PiVideoCameraLight size={20} />
