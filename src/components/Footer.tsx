@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="space-y-4 col-span-2">
             <Link to="/" className="flex items-center space-x-2">
           <img src="../../Images/logo.png" alt="" className='w-10' />
-              <span className="font-heading font-bold text-xl">
+              <span className="font-heading font-bold text-[17px] md:text-xl ">
                 Price Personal Healthcare
               </span>
             </Link>
@@ -75,8 +75,8 @@ const Footer = () => {
                 <MdLocationOn className="h-5 w-5 text-[#0EA5E9] mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-body text-gray-300 text-sm">
-                    2891 Springdale rd
-                    Sw apt 104 Atlanta
+                    2891 Springdale rd,
+                    Sw apt 104 Atlanta,
                   GA 30315
                   </p>
                 </div>

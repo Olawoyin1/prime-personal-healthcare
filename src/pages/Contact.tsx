@@ -50,8 +50,9 @@ const Contact = () => {
           <div className="bg-gray-200 rounded-xl h-96 flex items-center justify-center">
             <div className="text-center">
               <p className="font-body text-gray-500 mb-2">Interactive Map</p>
-              <p className="font-body text-sm text-gray-400">
-                123 Healthcare Ave, Medical District, Your City, ST 12345
+              <p className="font-body text-sm text-gray-400">2891 Springdale rd,
+                    Sw apt 104 Atlanta,
+                  GA 30315
               </p>
             </div>
           </div>

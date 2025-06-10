@@ -28,21 +28,21 @@ const About = () => {
 
   const teamMembers = [
     {
-      name: 'Dr. Sarah Johnson',
+      name: 'Dr. Samson Johnson',
       role: 'Medical Director',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      image: 'https://plus.unsplash.com/premium_photo-1723514536306-26fe5c4adeb7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fHVuaXRlZCUyMHN0YXRlJTIwZG9jdG9yfGVufDB8fDB8fHww',
       credentials: 'MD, Geriatric Medicine'
     },
     {
       name: 'Maria Rodriguez, RN',
       role: 'Head of Nursing',
-      image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      image: 'https://images.unsplash.com/photo-1674049406176-021807a2802e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHVuaXRlZCUyMHN0YXRlJTIwZmVtYWxlJTIwbnVyc2UlMjA0MDAlMjB4JTIwODB8ZW58MHx8MHx8fDA%3D',
       credentials: 'BSN, 15+ years experience'
     },
     {
       name: 'James Chen',
       role: 'Care Coordinator',
-      image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      image: 'https://plus.unsplash.com/premium_photo-1677165481551-c91ed6e15f09?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHVuaXRlZCUyMHN0YXRlJTIwZG9jdG9yfGVufDB8fDB8fHww',
       credentials: 'MSW, Licensed Social Worker'
     }
   ];
@@ -150,7 +150,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-3 gap-10">
             {teamMembers.map((member, index) => (
               <div key={index} className="bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
                 <div className="aspect-square overflow-hidden">

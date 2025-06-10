@@ -6,20 +6,20 @@ const ContactInfo = () => {
     {
       icon: MdLocationOn,
       title: 'Our Location',
-      details: ['123 Healthcare Ave', 'Medical District', 'Your City, ST 12345'],
+      details: ['2891 Springdale rd,', 'Sw apt 104 Atlanta,', 'GA 30315'],
       link: 'https://maps.google.com/?q=123+Healthcare+Ave'
     },
     {
       icon: MdPhone,
       title: 'Phone Number',
-      details: ['(123) 456-7890', '24/7 Emergency Line'],
+      details: ['4042735566', '24/7 Emergency Line'],
       link: 'tel:+1234567890'
     },
     {
       icon: MdEmail,
       title: 'Email Address',
-      details: ['info@gentlecarepath.com', 'We respond within 2 hours'],
-      link: 'mailto:info@gentlecarepath.com'
+      details: ['pricepersonalhealthcare755344@gmail.com', 'We respond within 2 hours'],
+      link: 'mailto:pricepersonalhealthcare755344@gmail.com'
     },
     {
       icon: MdSchedule,
@@ -75,7 +75,7 @@ const ContactInfo = () => {
       </div>
 
       {/* WhatsApp Contact */}
-      <div className="bg-[#10B981]/10 rounded-lg p-6 border border-[#10B981]/20">
+      {/* <div className="bg-[#10B981]/10 rounded-lg p-6 border border-[#10B981]/20">
         <div className="flex items-center space-x-3 mb-3">
           <div className="w-8 h-8 bg-[#10B981] rounded-full flex items-center justify-center">
             <span className="text-white text-sm font-bold">W</span>
@@ -95,7 +95,7 @@ const ContactInfo = () => {
         >
           <span>Start WhatsApp Chat</span>
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };
