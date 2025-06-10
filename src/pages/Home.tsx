@@ -282,7 +282,7 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              to="/book-appointment"
+              to="/contact"
               className="group bg-white text-[#0EA5E9] hover:bg-gray-50 font-bold py-4 px-8 rounded transition-all duration-300 transform  flex items-center justify-center space-x-3 text-sm"
             >
               <FaRegCalendar size={20} />
