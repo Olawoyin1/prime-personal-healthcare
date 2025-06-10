@@ -127,7 +127,7 @@ const BookingForm = () => {
         <option value="personal-support">Personal Support Services</option>
         <option value="specialized-care">Specialized Care Plans</option>
         <option value="companionship">Companionship Services</option>
-        <option value="live-in">24/7 Live-In Care</option>
+        <option value="live-in">Virtual Consultation</option>
         <option value="post-hospital">Post-Hospital Discharge</option>
         <option value="rehabilitation">Rehabilitation Support</option>
         <option value="dementia-care">Alzheimer's & Dementia Care</option>

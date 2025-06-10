@@ -36,7 +36,7 @@ const Hero = () => {
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  to="/book-appointment"
+                  to="/contact"
                   className="group bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white  py-4 px-8 rounded-xl transition-all duration-300 transform  shadow flex items-center justify-center space-x-2 text-sm"
                 >
                   <BsCalendarCheck size={20} />
