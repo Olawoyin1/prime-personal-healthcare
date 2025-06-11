@@ -221,7 +221,7 @@ const MedicalEquipment = () => {
 
       {/* Contact Modal */}
       {isModalOpen && selectedProduct && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+        <div className="fixed p-4 inset-0 z-50 flex items-center justify-center bg-black/50">
           <div className="bg-white rounded-xl shadow max-w-md w-full p-6 relative">
             <button
               onClick={() => setIsModalOpen(false)}
@@ -267,7 +267,7 @@ const MedicalEquipment = () => {
               </div>
 
               <div className="mt-6 p-4 bg-gray-50 rounded-lg text-center text-xs text-gray-500">
-                Our specialists are available Monday–Friday, 8AM–6PM EST. For urgent inquiries, call (123) 456-7890.
+                Our specialists are available Monday–Friday, 8AM–6PM EST. For urgent inquiries, call 4042735566.
               </div>
             </div>
           </div>
