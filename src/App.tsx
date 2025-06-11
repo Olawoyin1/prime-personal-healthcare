@@ -8,6 +8,7 @@ import {
 import { lazy, Suspense } from "react";
 import "./index.css";
 import Loader from "./utils/Loader";
+import { Toaster } from 'sonner';
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
@@ -114,7 +115,12 @@ const main = createBrowserRouter(
 );
 
 function App() {
-  return <RouterProvider router={main} />;
+  return (
+    <>
+    <Toaster richColors position="top-center" />
+    <RouterProvider router={main} />;
+    </>
+  )
 }
 
 export default App;

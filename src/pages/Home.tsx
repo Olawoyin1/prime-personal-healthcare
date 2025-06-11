@@ -156,12 +156,12 @@ const Home = () => {
               
               <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#10B981] to-[#10B981]/80 rounded-xl flex items-center justify-center mb-6">
-                  <BsAward className="h-8 w-8 text-white" />
+                  <MdOutlineSupportAgent className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="font-heading font-bold text-xl text-slate mb-4">Licensed & Certified</h3>
+                <h3 className="font-heading font-bold text-xl text-slate mb-4">24/7 Emergency Support</h3>
                 <p className="font-body text-gray-600 leading-relaxed">
-                  Our team includes licensed nurses, certified nursing assistants, and compassionate 
-                  companions, all rigorously vetted and continuously trained.
+                  Round-the-clock on-call support for urgent situations, providing peace of mind 
+                  for both patients and families at all times.
                 </p>
               </div>
             </div>
@@ -205,14 +205,16 @@ const Home = () => {
                 </p>
               </div>
               
+              
+
               <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#10B981] to-[#10B981]/80 rounded-xl flex items-center justify-center mb-6">
-                  <MdOutlineSupportAgent className="h-8 w-8 text-white" />
+                  <BsAward className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="font-heading font-bold text-xl text-slate mb-4">24/7 Emergency Support</h3>
+                <h3 className="font-heading font-bold text-xl text-slate mb-4">Licensed & Certified</h3>
                 <p className="font-body text-gray-600 leading-relaxed">
-                  Round-the-clock on-call support for urgent situations, providing peace of mind 
-                  for both patients and families at all times.
+                  Our team includes licensed nurses, certified nursing assistants, and compassionate 
+                  companions, all rigorously vetted and continuously trained.
                 </p>
               </div>
             </div>

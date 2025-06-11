@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-
-// import { Select, SelectContent, option, SelectTrigger, SelectValue } from '@/components/ui/select';
-// import { useToast } from '@/hooks/use-toast';
+import { useState } from "react";
 import { ContactForm } from "../type";
 import { MdSend } from "react-icons/md";
+import axios from 'axios';
+import { toast } from 'sonner';
 
 const BookingForm = () => {
   //   const { toast } = useToast();
@@ -21,30 +20,39 @@ const BookingForm = () => {
     setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+// Inside your component:
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
 
-    // toast({
-    //   title: "Consultation Request Received!",
-    //   description: "We'll contact you within 24 hours to schedule your free consultation.",
-    // });
+  try {
+    const response = await axios.post(
+      'https://pricepersonalhealthcare.onrender.com/api/contact/',
+      formData
+    );
 
-    // Reset form
-    setFormData({
-      name: "",
-      phone: "",
-      email: "",
-      serviceType: "",
-      availability: "",
-      message: "",
-    });
+    if (response.status === 200) {
+      toast("Your request was sent successfully! We'll be in touch soon.");
 
-    setIsSubmitting(false);
-  };
+      // Reset form
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        serviceType: "",
+        availability: "",
+        message: "",
+      });
+    }
+  } catch (error) {
+    console.error("Submission error:", error);
+    toast.error("Something went wrong. Please try again later.");
+  }
+
+  setIsSubmitting(false);
+};
+
 
   return (
     <div className="bg-white rounded-xl shadow p-8">
@@ -127,7 +135,7 @@ const BookingForm = () => {
         <option value="personal-support">Personal Support Services</option>
         <option value="specialized-care">Specialized Care Plans</option>
         <option value="companionship">Companionship Services</option>
-        <option value="live-in">Virtual Consultation</option>
+        <option value="virtual-consultation">Virtual Consultation</option>
         <option value="post-hospital">Post-Hospital Discharge</option>
         <option value="rehabilitation">Rehabilitation Support</option>
         <option value="dementia-care">Alzheimer's & Dementia Care</option>
